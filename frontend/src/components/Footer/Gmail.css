@@ -1,0 +1,40 @@
+.gmail {
+  width: 350px;
+  margin: 40px auto;
+  padding: 25px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gmail label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.gmail input[type="text"],
+.gmail input[type="tel"],
+.gmail input[type="email"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border 0.3s;
+}
+
+.gmail input:focus {
+  border-color: #4caf50;
+  outline: none;
+  background-color: #fff;
+}
+
+#btn {
+    margin-left: 140px;
+}

@@ -1,0 +1,44 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: linear-gradient(to right, #093028, #237a57);
+  box-shadow: 0 0 15px rgba(90, 255, 180, 0.4);
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#links {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.head img {
+  height: 100px;
+  width: 100px;
+  margin-left: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #e0ffe7;
+  text-shadow: 0 0 8px #adf9cd;
+  margin-left: 100px;
+  margin-bottom: 0px;
+}
+
+.heading {
+  display: inline;
+}
+
+h4 {
+  margin-left: 350px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}

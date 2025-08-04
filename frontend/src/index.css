@@ -1,0 +1,23 @@
+.back-button {
+  background-color: #006644;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ff99;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #00885a;
+  transform: scale(1.05);
+}
+
+/* index.css or App.css */
+html {
+  scroll-behavior: smooth;
+}
+
