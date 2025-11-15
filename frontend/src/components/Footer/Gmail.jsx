@@ -21,13 +21,16 @@ function Gmail() {
     event.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3000/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/submit`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        }
+      );
 
       if (response.ok) {
         alert("Form submitted successfully!");
@@ -43,13 +46,12 @@ function Gmail() {
     } catch (error) {
       console.error("Error submitting form:", error);
     }
-
   };
 
   return (
     <div className="gmail">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name </label>
+        <label htmlFor="name">Name</label>
         <input
           type="text"
           placeholder="Enter your name"
@@ -58,10 +60,9 @@ function Gmail() {
           value={data.name}
           onChange={handleChange}
         />
-        <br />
-        <br />
+        <br /><br />
 
-        <label htmlFor="mno">Mobile No </label>
+        <label htmlFor="mno">Mobile No</label>
         <input
           type="tel"
           placeholder="Enter your mobile no"
@@ -70,10 +71,9 @@ function Gmail() {
           value={data.mno}
           onChange={handleChange}
         />
-        <br />
-        <br />
+        <br /><br />
 
-        <label htmlFor="gm">Gmail </label>
+        <label htmlFor="gm">Gmail</label>
         <input
           type="email"
           placeholder="Enter your email"
@@ -82,10 +82,9 @@ function Gmail() {
           value={data.mail}
           onChange={handleChange}
         />
-        <br />
-        <br />
+        <br /><br />
 
-        <label htmlFor="send">Send your message </label>
+        <label htmlFor="send">Send your message</label>
         <textarea
           rows={5}
           cols={45}
@@ -93,8 +92,7 @@ function Gmail() {
           value={data.msg}
           onChange={handleChange}
         ></textarea>
-        <br />
-        <br />
+        <br /><br />
 
         <button id="btn" type="submit">
           Submit
